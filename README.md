@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/0eidgresatuv3lnf?svg=true)](https://ci.appveyor.com/project/Mogushkov/ahj-sse-ws)
+
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
