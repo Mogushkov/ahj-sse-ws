@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+</head>
+<body> 
+    <div class="container">
+        <div class="modal">
+            <form action="" class="form">
+                <h1 class="form__title">Выберите никнейм</h1>
+                <input type="text" name="name" class="input__form">
+                <button type="submit" class="btn">Войти в чат</button>
+            </form>
+            <div class="mistake"> Никнейм уже занят</div>
+        </div>
+        <div class="chat hidden">
+            <div class="users">
+                <ul class="users__list"></ul>
+            </div>
+            <div class="messages">
+                <ul class="messages__list"></ul>
+                <textarea name="textarea" class="textarea" placeholder="Enter your message here"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

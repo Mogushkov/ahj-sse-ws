@@ -1,0 +1,169 @@
+:root {
+    --border: 1px solid gray;
+    --main-color: rgb(115, 214, 115);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-size: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+  padding: 50px; 
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mistake {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.801);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 350px;
+    margin-top: 70px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    padding: 20px;
+    border: var(--border);
+    border-radius: 20px;
+    background-color: coral;
+}
+
+.form__title {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.input__form {
+    width: 80%;
+    padding: 9px;
+    border: var(--border);
+    border-radius: 7px;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: var(--border);
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    border: var(--border);
+    border-radius: 7px;
+}
+
+.chat {
+    display: flex;
+    justify-content: center;
+}
+
+.users {
+    width: 30%;
+    padding: 10px;
+    border: var(--border);
+    border-radius: 7px;
+    align-self: flex-start;
+}
+
+.messages {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: var(--border);
+    border-radius: 7px;
+}
+
+.user__item {
+    display: flex;
+    padding: 7px;
+    align-items: center;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    border: var(--border);
+    border-radius: 50%;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.messages__list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.textarea {
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 7px;
+    margin-top: 15px;
+    resize: none;
+}
+
+.message__item {
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.message__your {
+    align-self: flex-end;
+}
+
+.message__header {
+    margin-bottom: 7px;
+    color: gray;
+    font-size:  0.9em;
+}
+
+.message__header-your {
+    text-align: end;
+}
+
+.message__item:last-child {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
